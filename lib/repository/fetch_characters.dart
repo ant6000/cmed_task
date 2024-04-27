@@ -6,14 +6,14 @@ class FetchCharacter {
       final response = await http.get(
         Uri.parse(
             'https://hp-api.onrender.com/api/characters'),
-        headers: {
-          'accept': '*/*',
-          'Content-Type': 'application/json-patch+json',
-        },
+        // headers: {
+        //   'accept': '*/*',
+        //   'Content-Type': 'application/json-patch+json',
+        // },
       );
       return response;
     } catch (e) {
-      print('Error fetching trades: $e');
+      print('Error fetching : $e');
       return http.Response(e.toString(), 500);
     }
   }

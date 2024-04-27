@@ -1,6 +1,8 @@
+import 'package:cmed_task/views/pages/details_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'bindings/views_bindings.dart';
 import 'views/pages/home_page.dart';
 
 void main() {
@@ -19,7 +21,13 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const HomePage(),
+      initialRoute: '/homepage',
+      getPages: [
+        GetPage(
+            name: '/homepage',
+            page: () => HomePage(),
+            binding: CharacterBindings()),
+      ],
     );
   }
 }
