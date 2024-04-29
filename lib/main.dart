@@ -1,4 +1,3 @@
-import 'package:cmed_task/task2/views/download_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_downloader/flutter_downloader.dart';
 import 'package:get/get.dart';
@@ -36,7 +35,6 @@ class MyApp extends StatelessWidget {
             name: '/homepage',
             page: () => HomePage(),
             binding: CharacterBindings()),
-        GetPage(name: '/downloadpage', page: () => const DownloadPage()),
       ],
     );
   }
