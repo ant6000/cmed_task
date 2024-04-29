@@ -1,4 +1,4 @@
-import 'package:cmed_task/controller/character_controller.dart';
+import 'package:cmed_task/task1/controller/character_controller.dart';
 import 'package:get/get.dart';
 
 class CharacterBindings extends Bindings {

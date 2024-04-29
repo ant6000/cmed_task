@@ -37,6 +37,10 @@ dependencies:
   cupertino_icons: ^1.0.2
   get:
   http:
+  dio:
+  path_provider:
+  flutter_downloader:
+  permission_handler: 
   
 
 dev_dependencies:

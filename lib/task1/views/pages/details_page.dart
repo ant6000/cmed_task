@@ -1,4 +1,4 @@
-import 'package:cmed_task/model/character_model.dart';
+import 'package:cmed_task/task1/model/character_model.dart';
 import 'package:flutter/material.dart';
 
 class DetailsPage extends StatelessWidget {
@@ -8,6 +8,7 @@ class DetailsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(),
       body: Column(
         children: [
           Image.network(character.image,width: double.infinity,height: 300,errorBuilder: (context, error, stackTrace) => Placeholder(fallbackHeight: 300,fallbackWidth: double.infinity,child: Image.asset('images/loading.jpg'))),

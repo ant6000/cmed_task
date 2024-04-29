@@ -1,6 +1,6 @@
 import 'dart:convert';
-import 'package:cmed_task/model/character_model.dart';
-import 'package:cmed_task/repository/fetch_characters.dart';
+import 'package:cmed_task/task1/model/character_model.dart';
+import 'package:cmed_task/task1/repository/fetch_characters.dart';
 import 'package:get/get.dart';
 
 class CharacterController extends GetxController {
